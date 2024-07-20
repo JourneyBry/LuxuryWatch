@@ -1,7 +1,7 @@
 nav {
   padding: 0.5rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #2e4053;
   position: sticky;
@@ -10,17 +10,16 @@ nav {
 
 nav .title {
   font-size: 2.5rem;
-  margin-left: 1rem;
+  margin: 0rem;
   padding: 0rem;
   font-weight: 500px;
   text-decoration: none;
   color: white;
-  right: 0%;
+  left: 0%;
 }
 
 nav ul {
   display: flex;
-  margin-left: 2rem;
 }
 
 nav ul li {
@@ -52,6 +51,24 @@ nav .menu span {
   width: 100%;
   background-color: #fff;
   border-radius: 0.2rem;
+}
+
+nav .icons {
+  display: flex; /* Changed from block to flex for proper alignment */
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+nav .icons .icon {
+  position: relative; /* Add this to allow positioning of the pseudo-element */
+  color: #d5d8dc;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Ensure color transition is smooth */
+}
+
+nav .icons .icon:hover {
+  color: #fff;
 }
 
 @media (max-width: 480px) {
